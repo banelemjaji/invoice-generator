@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="assets/css/dashboard-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Inventory Manager</div>
+        <div class="user-info">
+            <span>user1</span>
+            <a href="login.html" class="logout-btn">Sign Out</a>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="header">
+            <h1>Inventory</h1>
+            <a href="add-item.html" class="btn-add">
+                <span>+</span> Add Item
+            </a>
+        </div>
+
+        <div class="table-container">
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Qty</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-table-body">
+                    <!-- Inventory items will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
